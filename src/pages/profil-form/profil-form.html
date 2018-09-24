@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Complétez votre profil !</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <form [formGroup]="profilForm">
+    <ion-list>
+
+      <ion-item-divider color="secondary">Informations</ion-item-divider>
+      <ion-item>
+        <ion-label floating>Nom</ion-label>
+        <ion-input formControlName="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Prénom</ion-label>
+        <ion-input formControlName="firstname"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Pseudo</ion-label>
+        <ion-input formControlName="pseudo"></ion-input>
+      </ion-item>
+
+      <ion-item-divider color="secondary">Caractéristiques physiques</ion-item-divider>
+      <ion-item>
+        <ion-label floating>Poids (en kg)</ion-label>
+        <ion-input formControlName="weight"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Taille (en cm)</ion-label>
+        <ion-input formControlName="height"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="secondary">Allergies</ion-label>
+        <ion-select multiple="true" formControlName="allergies">
+          <ion-option>Gluten</ion-option>
+          <ion-option>Crustacés</ion-option>
+          <ion-option>Oeufs</ion-option>
+          <ion-option>Poissons</ion-option>
+          <ion-option>Mollusques</ion-option>
+          <ion-option>Arachides</ion-option>
+          <ion-option>Soja</ion-option>
+          <ion-option>Lait</ion-option>
+          <ion-option>Fruits à coques</ion-option>
+          <ion-option>Céleri</ion-option>
+          <ion-option>Moutarde</ion-option>
+          <ion-option>Sésame</ion-option>
+          <ion-option>Lupin</ion-option>
+          <ion-option>Sulfites</ion-option>
+        </ion-select>>
+      </ion-item>
+      
+      <ion-item-divider color="secondary">Besoins alimentaires</ion-item-divider>
+      <ion-item>
+        <ion-label floating>Âge</ion-label>
+        <ion-input formControlName="age"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Problème de santé</ion-label>
+        <ion-input formControlName="health"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Activité physique</ion-label>
+        <ion-select formControlName="activity">
+          <ion-option value="1">1 fois par semaine ou moins</ion-option>
+          <ion-option value="2">2 à 4 fois par semaine</ion-option>
+          <ion-option value="3">5 fois par semaine ou plus</ion-option>
+          <p>une activité physique chez l'adulte correspond à minimum 30 minutes de marche rapide par jour</p>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Sexe</ion-label>
+        <ion-select interface="popover" formControlName="gender">
+          <ion-option value="homme">Homme</ion-option>
+          <ion-option value="femme">Femme</ion-option>
+        </ion-select>>
+      </ion-item>
+    </ion-list>
+    <ion-grid >
+      <ion-row>
+        <ion-col center text-center>
+          <button ion-button color="secondary" round (click)="onSubmitForm()">Valider</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+
+</ion-content>

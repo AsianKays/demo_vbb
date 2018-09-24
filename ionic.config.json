@@ -1,0 +1,8 @@
+{
+  "name": "projet_vitavinum",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "18074cb8"
+}

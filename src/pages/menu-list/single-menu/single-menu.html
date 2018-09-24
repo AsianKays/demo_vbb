@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons>
+      <button ion-button clear (click)="dismissModal()">Fermer</button>
+    </ion-buttons>
+    <ion-title>{{ menu.name }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-img src="{{menu.src}}"></ion-img>
+  <ion-item-group>
+    <ion-item-divider>Fiche descriptive</ion-item-divider>
+    <ion-item *ngFor="let line of menu.description">{{ line }}</ion-item>
+  </ion-item-group>
+  <ion-item-group>
+    <ion-item-divider>Allergènes</ion-item-divider>
+    <ion-item *ngFor="let line of menu.allergenes">{{ line }}</ion-item>
+  </ion-item-group>
+
+  <ion-grid >
+    <ion-row>
+      <ion-col center text-center>
+        <button ion-button color="secondary" round>Choisir ce menu !</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

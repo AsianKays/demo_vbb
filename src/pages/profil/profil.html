@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Profil</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding no-bounce *ngIf="profil">
+  <ion-item-group *ngFor="let item of profil">
+    <ion-item-divider color="secondary">Identité</ion-item-divider>
+    <ion-item>{{ item.name }} {{ item.firstname }} alias {{ item.pseudo }}, {{ item.age }} ans</ion-item>
+    <ion-item>{{ item.height }}cm pour {{ item.weight }}kg (IMC : {{ item.imc }})</ion-item>
+    <ion-item>Sexe : {{ item.gender }}</ion-item>
+    <ion-item>Niveau d'activité physique : {{ item.activity }}</ion-item>
+
+    <ion-item-divider color="secondary">Allergies</ion-item-divider>
+    <ion-item *ngFor="let item of profil">{{ item.allergies }}</ion-item>
+
+    <ion-item-divider color="secondary">Problème de santé</ion-item-divider>
+    <ion-item *ngFor="let item of profil">{{ item.health }}</ion-item>
+  </ion-item-group>
+</ion-content>

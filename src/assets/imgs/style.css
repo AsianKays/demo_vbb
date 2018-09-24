@@ -1,0 +1,32 @@
+.size {
+    width: 50%;
+    z-index: 5;
+}
+
+.navbar {
+    height: 4em;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.checked {
+    color: orange;
+}
+.restau:hover{
+    opacity: 0.5;
+}
+.img-fluid.rounded.mx-auto.d-block:hover{
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+a:link{
+    text-decoration: none;
+}
+textarea {
+    resize: none;
+  }
+.nozoom{
+    transform:none;
+}

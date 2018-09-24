@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Liste des restaurants</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding no-bounce>
+  <ion-list>
+    <ion-item *ngFor="let restaurant of restaurantsList">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/logo_mcdo.png">
+      </ion-thumbnail>
+      <!-- text-wrap nécessaire pour ne pas avoir les informations coupées à cause de la largeur de l'écran -->
+      <h2 text-wrap>{{restaurant.name}}</h2>
+      <p *ngFor="let line of restaurant.description" text-wrap>{{line}}</p>
+      <button ion-button clear item-end (click)="onGoToMenuList()">Voir</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

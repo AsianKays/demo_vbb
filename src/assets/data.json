@@ -1,0 +1,82 @@
+[
+    {
+        "gender": "femme",
+        "minAge": "1",
+        "maxAge": "3",
+        "activity": "1",
+        "minCal": "909",
+        "maxCal": "1100"
+    },
+    {
+        "gender": "femme",
+        "minAge": "4",
+        "maxAge": "6",
+        "activity": "1",
+        "minCal": "909",
+        "maxCal": "1100"
+    },
+    {
+        "gender": "femme",
+        "minAge": "7",
+        "maxAge": "9",
+        "activity": "1",
+        "minCal": "1699",
+        "maxCal": "2010"
+    },
+    {
+        "gender": "femme",
+        "minAge": "10",
+        "maxAge": "18",
+        "activity": "1",
+        "minCal": "2105",
+        "maxCal": "2895"
+    },
+    {
+        "gender": "femme",
+        "minAge": "19",
+        "maxAge": "40",
+        "activity": "1",
+        "minCal": "1709",
+        "maxCal": "1889"
+    },
+    {
+        "gender": "homme",
+        "minAge": "1",
+        "maxAge": "3",
+        "activity": "1",
+        "minCal": "957",
+        "maxCal": "1196"
+    },
+    {
+        "gender": "homme",
+        "minAge": "4",
+        "maxAge": "6",
+        "activity": "1",
+        "minCal": "1292",
+        "maxCal": "1699"
+    },
+    {
+        "gender": "homme",
+        "minAge": "7",
+        "maxAge": "9",
+        "activity": "1",
+        "minCal": "1866",
+        "maxCal": "2105"
+    },
+    {
+        "gender": "homme",
+        "minAge": "10",
+        "maxAge": "18",
+        "activity": "1",
+        "minCal": "2201",
+        "maxCal": "3445"
+    },
+    {
+        "gender": "homme",
+        "minAge": "19",
+        "maxAge": "40",
+        "activity": "1",
+        "minCal": "1995",
+        "maxCal": "2205"
+    }
+]

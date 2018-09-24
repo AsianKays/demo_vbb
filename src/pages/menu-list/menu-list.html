@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Liste des menus</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-row>
+    <ion-col col-6 tappable *ngFor="let menu of menuList; let i = index" (click)="onGoToMenu(i)">
+      <ion-img src={{menu.src}}></ion-img>
+      <p>{{menu.name}}</p>
+    </ion-col>
+  </ion-row>
+</ion-content>
